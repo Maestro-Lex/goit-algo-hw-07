@@ -5,6 +5,7 @@ from tree import *
 def get_max(root):
     if root:
         current = root
+        # Йдемо до самого низу дерева у правих гілках
         while current.right:
             current = current.right
         return current.key

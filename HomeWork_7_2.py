@@ -5,6 +5,7 @@ from tree import *
 def get_min(root):
     if root:
         current = root
+        # Йдемо до самого низу дерева у лівих гілках
         while current.left:
             current = current.left
         return current.key
